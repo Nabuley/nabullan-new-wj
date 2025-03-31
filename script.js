@@ -191,7 +191,12 @@ const editor = CodeMirror.fromTextArea(document.getElementById('codeInput'), {
     mode: "javascript",
     theme: "dracula"
 });
-
+editor.setValue(`!(Program Here!)
+func main() {
+    print("Hello, World!");     !(Please Use This Well!)
+}
+main();
+`);
 // Add the custom overlay
 editor.addOverlay(customOverlay);
 editor.addOverlay(classOverlay);
