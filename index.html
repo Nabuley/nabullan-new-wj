@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabullan New with JS (Beta)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Nabullan New with JS (Beta)</h2>
+    <textarea id="codeInput" placeholder="Write your custom script here..."></textarea>
+    <div>
+        <button onclick="executeScript()">Run Script</button>
+        <button onclick="saveCode()">Save Code</button>
+        <input type="file" id="fileInput" style="display: none;" onchange="loadCode(event)">
+        <button onclick="document.getElementById('fileInput').click()">Upload Code</button>
+    </div>
+    <pre id="output"></pre>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

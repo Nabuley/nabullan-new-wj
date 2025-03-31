@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #282c34;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #61dafb;
+}
+
+.CodeMirror {
+    height: 200px;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #61dafb;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+pre#output {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 1px solid #555;
+}
+
+.cm-keyword-custom {
+    color: #ff79c6 !important; /* Use !important to enforce the style */
+}
+.comment-custom {
+    color: red !important; /* 주석을 빨간색으로 하이라이트 */
+    /*font-weight: bold;*/
+}
+
+.cm-classKeywords-custom {
+    color: rgb(255, 255, 0) !important; /* 주석을 빨간색으로 하이라이트 */
+    font-weight: bold;
+}
+/* 클래스 정의의 색상 */
+/* 지역 변수의 색상 변경 */
+/* 클래스 선언 시의 색상 */
+
+/* 클래스 이름 스타일링 */
+/* .CodeMirror .cm-keyword {
+    color: #FF6347; /* class, extends, constructor 같은 키워드 */
+/* }
+.CodeMirror .cm-def, .CodeMirror .cm-class {
+    color: #00ffff !important; /* 클래스 이름 (예: MyClass) */
+/* }
+
+/* 클래스 인스턴스 및 속성 스타일링 */
+/* .CodeMirror .cm-property {
+    color: #1E90FF; /* 인스턴스 속성 (예: myObject.myProperty) */
+/* } */
+/*.CodeMirror span.cm-def {
+ *   color: #1070ff; /* 함수 정의의 색상 */
+/*}*/
