@@ -3,7 +3,6 @@ const class_munja = ["(", ")", " ", "{", "}", "[", "]", ";", "\n", '.'];
 
 Array.prototype.equal = function (arr) {
     if (!Array.isArray(arr) || arr.length !== this.length) return false;
-
     for (let i in arr) {
         if (Array.isArray(arr[i]) && Array.isArray(this[i])) {
             if (!this[i].equal(arr[i])) return false;
